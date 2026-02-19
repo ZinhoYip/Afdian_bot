@@ -1,6 +1,6 @@
 # ⚡️ Afdian-Webhook-Notifier (爱发电赞助通知助手)
 
-一个基于 Python Flask 的轻量级 Webhook 接收端。当你在[爱发电](https://afdian.net/)收到新的赞助订单时，它可以自动将订单详情（金额、方案、单号等）实时推送到你的 **Telegram** 和 **邮箱**。
+一个基于 Python Flask 的轻量级 Webhook 接收端。当你在[爱发电](https://afdian.com/)收到新的赞助订单时，它可以自动将订单详情（金额、方案、单号等）实时推送到你的 **Telegram** 和 **邮箱**。
 
 本项目专为 Serverless 架构设计，支持零成本一键部署至 Vercel，无需维护自己的云服务器。
 

@@ -7,6 +7,12 @@ from email.header import Header
 from email.utils import formataddr
 from flask import Flask, request, jsonify
 
+# 引入 dotenv
+from dotenv import load_dotenv
+
+# 加载 .env 文件中的变量到系统环境变量中
+load_dotenv()
+
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
 
@@ -89,3 +95,6 @@ def afdian_webhook():
         send_to_email(email_subject, email_content)
         
     return jsonify({"ec": 200, "em": ""})
+if __name__ == '__main__':
+    # 本地测试时，监听 5000 端口
+    app.run(host='0.0.0.0', port=5000)
